@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
+    
+    <title>Contacts</title>
+
+    <style>
+    .success, .fail {
+color: white;
+padding: 5px;
+margin: 5px 0 15px 0 ;
+    }
+    .success{
+
+        background-color: green;
+    }
+
+    .fail{
+        background-color: red;
+    }
+    
+    </style>
+</head>
+<body>
+<div class="container" style="width:90%;border-color: black;">
+       <div class="row">
+                <div class="one column">
+                    <span><img src="contactIcon.png" height=60px width=60px/></span>
+                </div>
+                <div class="eleven columns" style="padding:15px;"><h1 style="font-weight: lighter;">Contacts</h1></div>
+              </div>
+
+<br/>
+<br/>
+<br/>
+
+<form id="contactForm">
+<div>
+    <label for="name">Contact Name</label>
+    <input type="text" id="name" class="u-full-width" />
+</div>
+
+<div>
+    <label for="emailId">Contact Email</label>
+    <input type="text" id="emailId" class="u-full-width" />
+</div>
+
+
+<div>
+    <label for="contNum">Contact Phone</label>
+    <input type="text" id="contNum" class="u-full-width" />
+</div>
+
+<br/>
+<br/>
+<br/>
+<a class="button button-primary u-full-width" id="submitContact"  href="#">Save Contact</a>
+</form>
+
+<hr>
+
+
+<table class="ul-full-width" style="width:100%;">
+
+<thead >
+    <tr>
+        <th> </th>
+        <th >
+            Contact Name
+        </th>
+        <th >
+            Contact Email
+        </th>
+        <th>
+            Contact Phone
+        </th>
+    </tr>
+</thead>
+<tbody id="contactList" class="ul-full-width">
+
+</tbody>
+</table>
+
+</div>
+    
+
+
+    <script src="app.js"/>
+</body>
+</html>
